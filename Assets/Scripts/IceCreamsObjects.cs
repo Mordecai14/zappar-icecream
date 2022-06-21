@@ -22,8 +22,8 @@ public class IceCreamsObjects : MonoBehaviour
 	        Destroy(this.gameObject);
         }
     }
-	void FixUpdate()
-	{
-		rb.AddForce(transform.forward * force);
-	}
+    private void FixedUpdate()
+    {
+		rb.AddForce(transform.forward * -force);
+    }
 }
