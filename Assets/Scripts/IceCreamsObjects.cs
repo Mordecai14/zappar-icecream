@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class IceCreamsObjects : MonoBehaviour
 {
+	Rigidbody rb;
+	public float force;
     // Start is called before the first frame update
     void Start()
     {
+	  rb = GetComponent<Rigidbody>();
         transform.Rotate(-90, 0, 0);
-	  transform.position = new Vector3(transform.position.x,10,10f);
+	  transform.position = new Vector3(transform.position.x, 10, 3);
     }
 
     // Update is called once per frame
@@ -19,4 +22,8 @@ public class IceCreamsObjects : MonoBehaviour
 	        Destroy(this.gameObject);
         }
     }
+	void FixUpdate()
+	{
+		rb.AddForce(transform.forward * force);
+	}
 }
