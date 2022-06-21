@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -414,7 +414,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 337376378}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 171.45671, y: 177.4306, z: -149.02388}
+  m_LocalPosition: {x: 0, y: 6.14, z: 2.49}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -435,7 +435,7 @@ MonoBehaviour:
   scoreText: {fileID: 542006732}
   timeText: {fileID: 1086197347}
   startButton: {fileID: 235744322}
-  spawner: {fileID: 620986254}
+  spawner: {fileID: 0}
   score: 0
   timer: 8
   isPlaying: 0
@@ -707,54 +707,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 542006730}
   m_CullTransparentMesh: 1
---- !u!1 &620986254
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 620986256}
-  - component: {fileID: 620986255}
-  m_Layer: 0
-  m_Name: SpawnParent
-  m_TagString: Untagged
-  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &620986255
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620986254}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67ca1c2a5c6731b4b819f6202e8f4cde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parent: {fileID: 620986254}
-  objectToSpawn: {fileID: 4412080460701356766, guid: 7fc268053cc102a4cad03b8418170238, type: 3}
-  numberToSpawn: 5
-  rate: 1
-  limit: 10
---- !u!4 &620986256
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620986254}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.4000015, z: 4}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &659341546
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,62 +753,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &883647386
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 883647388}
-  - component: {fileID: 883647387}
-  m_Layer: 0
-  m_Name: Zappar Face Tracking Anchor 0
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &883647387
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883647386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6aaa77c67994b1444b718f22e0757d49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FaceTrackingTarget: {fileID: 659341547}
-  OnSeenEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnNotSeenEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  AnchorId: 0
-  m_faceNumber: 0
---- !u!4 &883647388
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 883647386}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1431036959}
-  - {fileID: 1118180610}
-  - {fileID: 1779085454}
-  m_Father: {fileID: 659341548}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &958983413
+--- !u!43 &806008022
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1020,6 +917,61 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &883647386
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 883647388}
+  - component: {fileID: 883647387}
+  m_Layer: 0
+  m_Name: Zappar Face Tracking Anchor 0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &883647387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883647386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aaa77c67994b1444b718f22e0757d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FaceTrackingTarget: {fileID: 659341547}
+  OnSeenEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  OnNotSeenEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  AnchorId: 0
+  m_faceNumber: 0
+--- !u!4 &883647388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883647386}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1431036959}
+  - {fileID: 1118180610}
+  - {fileID: 1779085454}
+  m_Father: {fileID: 659341548}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1055809532
 GameObject:
   m_ObjectHideFlags: 0
@@ -1107,6 +1059,36 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!1 &1079836068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1079836069}
+  m_Layer: 0
+  m_Name: spawner parent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1079836069
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1079836068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.09194977, y: 26.5, z: -6.982082}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1086197345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1474,11 +1456,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ca1c2a5c6731b4b819f6202e8f4cde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  parent: {fileID: 1779085453}
+  parent: {fileID: 1079836068}
   objectToSpawn: {fileID: 4412080460701356766, guid: 7fc268053cc102a4cad03b8418170238, type: 3}
   numberToSpawn: 1
-  rate: 0.5
-  limit: 20
+  rate: 1
+  limit: 10
 --- !u!4 &1414625917
 Transform:
   m_ObjectHideFlags: 0
@@ -1486,8 +1468,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414625915}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.02, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 12.28, z: 4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1587,7 +1569,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431036958}
-  m_Mesh: {fileID: 958983413}
+  m_Mesh: {fileID: 806008022}
 --- !u!1 &1547512084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,7 +1964,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2106725484}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -23.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1055809533}
