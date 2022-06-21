@@ -40,7 +40,7 @@ public class Spawner : MonoBehaviour
 
     float GetModifier()
     {
-        float modifier = Random.Range(0f, 0.0001f);
+        float modifier = Random.Range(0f, 2f);
         if (Random.Range(0, 2) > 0)
             return -modifier;
         else
