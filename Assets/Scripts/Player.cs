@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     }
 
     void OnTriggerEnter(Collider other) {
-        //Destroy(other.gameObject);
+        Destroy(other.gameObject);
         GameController.instance.score += 1;
         print("si lo agarra");
     }

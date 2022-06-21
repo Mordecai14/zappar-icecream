@@ -14,8 +14,9 @@ public class IceCreamsObjects : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-	if(transform.position.y <= -37){
-	Destroy(this.gameObject);
-}
+	    if(transform.position.y <= -37)
+        {
+	        Destroy(this.gameObject);
+        }
     }
 }
